@@ -1,0 +1,23 @@
+[
+    {
+        "id": "FUN_004035a0",
+        "obfuscated_name": "FUN_004035a0",
+        "decompiled_code": "int sub_4035a0(const char* ip_addr, int port_num) {\n    int sock = socket(2, 1, 0);\n    if (sock < 0) return -1;\n    struct sockaddr_in addr;\n    memset(&addr, 0, sizeof(addr));\n    if (connect(sock, (struct sockaddr*)&addr, sizeof(addr)) < 0) return -1;\n    return sock;\n}",
+        "callers": ["start_client"],
+        "callees": ["socket", "memset", "connect"]
+    },
+    {
+        "id": "FUN_00404010",
+        "obfuscated_name": "FUN_00404010",
+        "decompiled_code": "void sub_404010(char* enc_payload, size_t data_len, const char* secret_key) {\n    for (size_t i = 0; i < data_len; i++) {\n        enc_payload[i] ^= secret_key[i % 4];\n    }\n}",
+        "callers": ["process_incoming_packet"],
+        "callees": []
+    },
+    {
+        "id": "FUN_00406000",
+        "obfuscated_name": "FUN_00406000",
+        "decompiled_code": "int sub_406000(const char* input_token, const char* expected_token) {\n    if (strlen(input_token) != strlen(expected_token)) return 0;\n    return strcmp(input_token, expected_token) == 0;\n}",
+        "callers": ["check_access_rights"],
+        "callees": ["strlen", "strcmp"]
+    }
+]

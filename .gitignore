@@ -1,0 +1,25 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Model Weights, Checkpoints & Datasets
+models/
+dataset/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Execution Outputs
+sample_data/predictions.json
+
+# IDE & OS Settings
+.vscode/
+.idea/
+.DS_Store
