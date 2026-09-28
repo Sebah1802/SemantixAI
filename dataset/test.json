@@ -1,0 +1,10 @@
+[
+    {
+        "input": "Decompiled function: int check_credentials(char *user, char *pass) { return strcmp(user, \"admin\") == 0 && strcmp(pass, \"secret\") == 0; } Called functions: strcmp Callers: main",
+        "target": "check_credentials"
+    },
+    {
+        "input": "Decompiled function: char *prepare_buffer(int size) { char *buffer = malloc(size); memset(buffer, 0, size); return buffer; } Called functions: malloc, memset Callers: main",
+        "target": "prepare_buffer"
+    }
+]

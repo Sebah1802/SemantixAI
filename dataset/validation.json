@@ -1,0 +1,18 @@
+[
+    {
+        "input": "Decompiled function: int verify_user(char *username) { return strcmp(username, \"admin\") == 0; } Called functions: strcmp Callers: main",
+        "target": "verify_user"
+    },
+    {
+        "input": "Decompiled function: char *make_buffer(int size) { char *p = malloc(size); memset(p, 0, size); return p; } Called functions: malloc, memset Callers: main",
+        "target": "create_buffer"
+    },
+    {
+        "input": "Decompiled function: int transmit_message(int fd, char *msg) { return send(fd, msg, 100, 0); } Called functions: send Callers: main",
+        "target": "send_message"
+    },
+    {
+        "input": "Decompiled function: int load_data(FILE *f, char *buffer) { return fread(buffer, 1, 100, f); } Called functions: fread Callers: main",
+        "target": "read_data"
+    }
+]

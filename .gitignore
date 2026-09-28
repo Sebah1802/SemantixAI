@@ -8,18 +8,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Large Model Weights, Checkpoints & Datasets
-models/
-dataset/
-*.safetensors
-*.bin
-*.pt
-*.pth
-
-# Execution Outputs
+# Execution Output
 sample_data/predictions.json
 
-# IDE & OS Settings
+# IDE Settings
 .vscode/
 .idea/
 .DS_Store
